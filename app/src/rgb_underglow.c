@@ -300,9 +300,9 @@ const struct led_rgb lilac = HEXRGB(0x6b, 0x1f, 0xce);
 static void zmk_led_battery_level(int bat_level, const uint8_t *addresses, size_t addresses_len) {
     struct led_rgb bat_colour;
 
-    if (bat_level > 40) {
+    if (bat_level >= 40) {
         bat_colour = green;
-    } else if (bat_level > 20) {
+    } else if (bat_level >= 20) {
         bat_colour = yellow;
     } else {
         bat_colour = red;
