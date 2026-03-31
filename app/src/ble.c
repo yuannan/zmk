@@ -59,7 +59,7 @@ enum advertising_type advertising_status;
 static struct zmk_ble_profile profiles[ZMK_BLE_PROFILE_COUNT];
 static uint8_t active_profile;
 
-static bool permit_adv = true;
+static bool permit_adv = false;
 
 #if IS_ENABLED(CONFIG_ZMK_BLE_DEVICE_NAME_APPEND_SN)
 
